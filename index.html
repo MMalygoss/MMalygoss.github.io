@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
@@ -19,12 +19,12 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css" integrity="sha256-2H3fkXt6FEmrReK448mDVGKb3WW2ZZw35gI7vqHOE4Y=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","version":"8.6.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","version":"8.6.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
 <meta property="og:type" content="website">
 <meta property="og:title" content="Malygos&#39; Blog">
 <meta property="og:url" content="http://example.com/index.html">
 <meta property="og:site_name" content="Malygos&#39; Blog">
-<meta property="og:locale" content="zh_CN">
+<meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary">
 
 
@@ -32,7 +32,7 @@
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"en","comments":"","permalink":"","path":"index.html","title":""}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
 <title>Malygos' Blog</title>
@@ -53,7 +53,7 @@
     <header class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
-    <div class="toggle" aria-label="切换导航栏" role="button">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
         <span class="toggle-line"></span>
         <span class="toggle-line"></span>
         <span class="toggle-line"></span>
@@ -79,8 +79,8 @@
 
 <nav class="site-nav">
   <ul class="main-menu menu">
-        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li>
-        <li class="menu-item menu-item-刷题中"><a href="/doingexercise/" rel="section"><i class="fas fa-edit fa-fw"></i>刷题中</a></li>
+        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li>
+        <li class="menu-item menu-item-刷题中…"><a href="/categories/exercise/" rel="section"><i class="fas fa-edit fa-fw"></i>刷题中…</a></li>
   </ul>
 </nav>
 
@@ -101,10 +101,10 @@
     <div class="sidebar-inner sidebar-overview-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
-          文章目录
+          Table of Contents
         </li>
         <li class="sidebar-nav-overview">
-          站点概览
+          Overview
         </li>
       </ul>
 
@@ -124,9 +124,13 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives">
-          <span class="site-state-item-count">1</span>
-          <span class="site-state-item-name">日志</span>
+          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-name">posts</span>
         </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">categories</span>
       </div>
   </nav>
 </div>
@@ -144,7 +148,7 @@
     </header>
 
     
-  <div class="back-to-top" role="button" aria-label="返回顶部">
+  <div class="back-to-top" role="button" aria-label="Back to top">
     <i class="fa fa-arrow-up"></i>
     <span>0%</span>
   </div>
@@ -181,15 +185,20 @@
         </h2>
 
         <div class="post-meta-container">
+        
+          <i class="fa fa-thumb-tack"></i>
+          <font color=7D26CD>置顶</font>
+          <span class="post-meta-divider">|</span>
+        
           <div class="post-meta">
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-calendar"></i>
       </span>
-      <span class="post-meta-item-text">发表于</span>
+      <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="创建时间：2021-09-17 18:10:58 / 修改时间：18:12:19" itemprop="dateCreated datePublished" datetime="2021-09-17T18:10:58+08:00">2021-09-17</time>
+      <time title="Created: 2021-09-17 18:10:58 / Modified: 19:20:40" itemprop="dateCreated datePublished" datetime="2021-09-17T18:10:58+08:00">2021-09-17</time>
     </span>
 
   
@@ -202,7 +211,110 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <p>你好！这里是Malygos的个人主页。</p>
+          <p>你好！这里是Malygos的原创内容收录。</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/09/17/riemann1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Malygos' Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/09/17/riemann1/" class="post-title-link" itemprop="url">《黎曼几何初步》（白正国等）课后习题解答</a>
+        </h2>
+
+        <div class="post-meta-container">
+        
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2021-09-17 15:56:55 / Modified: 19:10:10" itemprop="dateCreated datePublished" datetime="2021-09-17T15:56:55+08:00">2021-09-17</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/exercise/" itemprop="url" rel="index"><span itemprop="name">exercise</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h1><h2 id="1"><a href="#1" class="headerlink" title="1."></a>1.</h2><p>$1\le i\le n$.</p>
+<p>$F\Rightarrow f^i$.</p>
+<p>For any $i$, we have $|f^i(x)-f^i(y)|\le||F(x)-F(y)||&lt;\varepsilon$.</p>
+<p>$f^i\Rightarrow F$.</p>
+<p>Given an $\varepsilon$, for each $i$, we have $\delta_i$ for $f^i$ such that $|f^i(x)-f^i(y)|&lt;\varepsilon$ whenever $|x-y|&lt;\delta_i$. </p>
+<p>Take $\delta=\min\delta_i$, then $||F(x)-F(y)||=\sqrt{\sum|f^i(x)-f^i(y)|^2}\le\sqrt{n}\varepsilon$ whenever $|x-y|&lt;\delta$.</p>
+<h2 id="2"><a href="#2" class="headerlink" title="2."></a>2.</h2><p>We need to prove that the transitivity of bijection, continuity and $k$-differentiability are all legitimate.   </p>
+<p>Transitivity of Bijection is obvious.</p>
+<p>For continuity and $k$-differentiability, see Theorem 1.1.2 in Page 3 of the textbook.</p>
+<p>Known the transitivities’ validity, since $H=G\circ F$ and $H^{-1}=F^{-1}\circ G^{-1}$, $k$-diffeomorphism is then transitive for $F,G\Rightarrow H$.</p>
+<p>Similaily, notice that $G=H\circ F^{-1}$, $F=G^{-1}\circ H$ would be enough for the proof of the other two.</p>
+<h2 id="3"><a href="#3" class="headerlink" title="3."></a>3.</h2><p>Corollary 1.</p>
+<p>Given arbitrary open set $V\subset U$, we need to prove that $F(V)$ is an open set in $\mathrm{R}^m$. For each point $a\in V$, since $DF(a)$ is nonsingular, there exists an open neighborhood $W_a\ni a$ in which $F$ is an $k$-diffeomorphism due to the Inverse Function Theorem. </p>
+<p>Consider $W_a\cap V$. Obviously it is open, and in it $F$ is also $k$-diffeomorphism, so $F(W_a\cap V)$ is open.</p>
+<p>Notice that $V=\bigcup_{a\in V}(W_a\cap V)$, so we have $F(V)=\bigcup_{a\in V} F(W_a\cap V)$ is open. Q. E. D.</p>
+<p>Corollary 2.</p>
+<p>Bijection &amp; nonsingularity $\Rightarrow k$-diffeomorphism.</p>
+<p>Since $F$ is bijection, $F^{-1}$ is equal to $(F|_V)^{-1}$ for any $V\subset U$. As continuity and $k$-differentiability are both local properties, and for each point $a\in U$, there exists an open neighborhood $W_a\ni a$ in which $(F|_{W_a})^{-1}$ is continuous and $k$-differentiable at $a$ due to the Inverse Function Theorem, $F^{-1}$ is continuous and $k$-differentiable in entire $U$, i.e. $F$ is $k$-diffeomorphism in entire $U$.</p>
+<p>$k$-diffeomorphism $\Rightarrow$ Bijection &amp; nonsingularity.</p>
+<p>Bijection is clear by definition.</p>
+<p>For nonsingularity, notice that $F^{-1}\circ F=\mathrm{ide}$. Using the chain rule we immediately know $\det(DF)\neq0$ for any $x\in U$.</p>
+<h2 id="4"><a href="#4" class="headerlink" title="4."></a>4.</h2><p>(i)</p>
+<p>There are two things we need to check. </p>
+<ol>
+<li>$i(B^k_{\varepsilon}(0))\subset B^m_{\varepsilon}(0)$, $\pi(B^n_{\varepsilon}(0))\subset B^k_{\varepsilon}(0)$.</li>
+<li>$v\circ F\circ u^{-1}(B^m_{\varepsilon}(0))\subset B^n_{\varepsilon}(0)$.</li>
+</ol>
+<p>Both propositions are obvious.</p>
+<p>(ii) is of the same reason.</p>
 
       
     </div>
@@ -237,7 +349,7 @@
   </span>
   <span class="author" itemprop="copyrightHolder"></span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" rel="noopener" target="_blank">NexT.Pisces</a>
   </div>
 
     </div>
@@ -255,6 +367,12 @@
   
 
 
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":"ture","tags":"none","js":{"url":"https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js","integrity":"sha256-r+3itOMtGGjap0x+10hu6jW/gZCzxHsoKrOd7gyRSGY="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
 
 
 
