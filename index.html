@@ -274,7 +274,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-09-22 11:41:33" itemprop="dateModified" datetime="2021-09-22T11:41:33+08:00">2021-09-22</time>
+        <time title="Modified: 2021-09-22 11:44:57" itemprop="dateModified" datetime="2021-09-22T11:44:57+08:00">2021-09-22</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -312,7 +312,7 @@
 <p>Back to the problem. </p>
 <p>Since $\mathcal{B}=\{(a, b)\}$ is a basis of the standard topology in $\mathrm{R}$. Using the theorem above by induction, $\mathcal{C}=\{(a_1, b_1)\times(a_2, b_2)\times\dots\times(a_n,b_n)\}$ is a basis of the standard topology in $\mathrm{R}^m$.</p>
 <h2 id="2"><a href="#2" class="headerlink" title="2."></a>2.</h2><p>$\delta(m)$ has the best estimate of $\frac{1}{m}$. </p>
-<p>Construction. Let $A=-\frac{1}{m}\begin{pmatrix}1&amp;1&amp;\dots&amp;1\\1&amp;1&amp;\dots&amp;1\\\cdots\\1&amp;1&amp;\dots&amp;1\end{pmatrix}$. Then $E_m+A=\begin{pmatrix}\frac{m-1}{m}&amp;-\frac{1}{m}&amp;-\frac{1}{m}&amp;\dots&amp;-\frac{1}{m}\-\frac{1}{m}&amp;\frac{m-1}{m}&amp;-\frac{1}{m}&amp;\dots&amp;-\frac{1}{m}\\\cdots\-\frac{1}{m}&amp;-\frac{1}{m}&amp;-\frac{1}{m}&amp;\dots&amp;\frac{m-1}{m}\end{pmatrix}$ is not invertible.</p>
+<p>Construction. Let $A=-\frac{1}{m}\begin{pmatrix}1&amp;1&amp;\dots&amp;1\\1&amp;1&amp;\dots&amp;1\\\cdots\\1&amp;1&amp;\dots&amp;1\end{pmatrix}$. Then $E_m+A=\begin{pmatrix}\frac{m-1}{m}&amp;-\frac{1}{m}&amp;-\frac{1}{m}&amp;\dots&amp;-\frac{1}{m} \\ -\frac{1}{m}&amp;\frac{m-1}{m}&amp;-\frac{1}{m}&amp;\dots&amp;-\frac{1}{m} \\ \cdots \\ -\frac{1}{m}&amp;-\frac{1}{m}&amp;-\frac{1}{m}&amp;\dots&amp;\frac{m-1}{m}\end{pmatrix}$ is not invertible.</p>
 <p>Max. </p>
 <p>Proof by contradiction. Suppose $A=(a_{ij})$ with $|a_{ij}&lt;\frac{1}{m}|$ makes $E_m+A$ not invertible. Thus there exists $k_i$ s. t. $\sum_{i=1}^mk_i[(0,,\cdots,0,1,0,\cdots,0)+(a_{i1},a_{i2},\cdots,a_{in})]=(0,0,\cdots,0)$. Without loss of generality, we can assume $k_1=\max_{1\le i\le n} k_i&gt;0$. Then we consider the first element in the vector, which indicates $k_1(1-a_{11})+\sum_{i=2}^mk_ia_{i1}=0$. But we have $|k_1(1-a_{11})+\sum_{i=2}^mk_ia_{i1}|\ge|k_1(1-\sum_{i=1}^ma_{i1})|&gt;0$. Contradiction. </p>
 <p>In conclusion, $\delta(m)$ has the best estimate of $\frac{1}{m}$. </p>
@@ -518,7 +518,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-09-22 11:29:48" itemprop="dateModified" datetime="2021-09-22T11:29:48+08:00">2021-09-22</time>
+        <time title="Modified: 2021-09-22 11:51:15" itemprop="dateModified" datetime="2021-09-22T11:51:15+08:00">2021-09-22</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -545,8 +545,8 @@
 <h2 id="2"><a href="#2" class="headerlink" title="2."></a>2.</h2><p>Let $c$ denotes the pollutant concentration.</p>
 <p>$\begin{cases}\frac{\mathrm{d}c}{\mathrm{d}t}\times10000\,\mathrm{m^3}=50\,\mathrm{m^3/day}\times\frac{m_0}{5}\,\mathrm{g/m^3}-c\times200\,\mathrm{m^3/day}\\c(0)=5m_0\,\mathrm{g/m^3}\\\end{cases}$</p>
 <p>Solve this ode, we get </p>
-<script type="math/tex; mode=display">
-c(t)=\mathrm{e}^{\int_0^t-0.02\,\mathrm{/day}\,\mathrm{d}s}(5m_0\,\mathrm{g/m^3}+\int_0^t0.001m_0\,\mathrm{g/(day\cdot m^3)}\cdot\mathrm{e}^{\int_0^s0.02\,\mathrm{/day}\,\mathrm{d}r}\,\mathrm{d}s)\\=\mathrm{e}^{-0.02t\,\mathrm{/day}}[5m_0\,\mathrm{g/m^3}+0.05m_0\,\mathrm{g/m^3}\cdot(\mathrm{e}^{0.02t\,\mathrm{/day}}-1)]\\=(0.05+4.95\cdot\mathrm{e}^{-0.02t\,\mathrm{/day}})m_0\,\mathrm{g/m^3}</script><p>Now let $c(t)=m_0\,\mathrm{g/m^3} $, we can work out that $t=50\ln\frac{99}{19}\,\mathrm{day}$.</p>
+<p>$c(t)=\mathrm{e}^{\int_0^t-0.02\,\mathrm{/day}\,\mathrm{d}s}(5m_0\,\mathrm{g/m^3}+\int_0^t0.001m_0\,\mathrm{g/(day\cdot m^3)}\cdot\mathrm{e}^{\int_0^s0.02\,\mathrm{/day}\,\mathrm{d}r}\,\mathrm{d}s) \\ =\mathrm{e}^{-0.02t\,\mathrm{/day}}[5m_0\,\mathrm{g/m^3}+0.05m_0\,\mathrm{g/m^3}\cdot(\mathrm{e}^{0.02t\,\mathrm{/day}}-1)] \\ =(0.05+4.95\cdot\mathrm{e}^{-0.02t\,\mathrm{/day}})m_0\,\mathrm{g/m^3}$</p>
+<p>Now let $c(t)=m_0\,\mathrm{g/m^3} $, we can work out that $t=50\ln\frac{99}{19}\,\mathrm{day}$.</p>
 <h2 id="3"><a href="#3" class="headerlink" title="3."></a>3.</h2><p>Repeated infection able case.</p>
 <p>$\begin{cases}\frac{\mathrm{d}x}{\mathrm{d}t}=km-\mu x\\x(0)=x_0\end{cases}$</p>
 <p>Repeated infection unable case.</p>
