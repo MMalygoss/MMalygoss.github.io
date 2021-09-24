@@ -128,7 +128,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-count">6</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -217,6 +217,125 @@
     
     <div class="post-body" itemprop="articleBody">
           <p>你好！这里是Malygos的原创内容收录。</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/09/24/Algebraic-Topology1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Malygos' Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/09/24/Algebraic-Topology1/" class="post-title-link" itemprop="url">Hatcher's Algebraic Topology Solutions</a>
+        </h2>
+
+        <div class="post-meta-container">
+        
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2021-09-24 10:08:14 / Modified: 12:36:17" itemprop="dateCreated datePublished" datetime="2021-09-24T10:08:14+08:00">2021-09-24</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/exercise/" itemprop="url" rel="index"><span itemprop="name">exercise</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="chapter-0">Chapter 0</h1>
+<h2 id="section">3.</h2>
+<p>We prove (b) first.</p>
+<ol start="2" type="a">
+<li></li>
+</ol>
+<p>Suppose <span class="math inline">\(f,g,h:X\to Y\)</span>. Suppose <span class="math inline">\(f\)</span> and <span class="math inline">\(g\)</span> are in the homotopy <span class="math inline">\(F(x,t)\)</span> with <span class="math inline">\(f(x)=F(x,t_1), g(x)=F(x,t_2)\)</span>, and <span class="math inline">\(g\)</span> and <span class="math inline">\(h\)</span> are in the homotopy <span class="math inline">\(G(x,t)\)</span> with <span class="math inline">\(g(x)=G(x,t_3), h(x)=G(x,t_4)\)</span>.</p>
+<p>Then we notice that <span class="math inline">\(H(x,t)=\begin{cases}F(x,t_1)&amp;t&lt;t_1\\G(x,t+t_3-t_1)&amp;t\ge t_1\end{cases}\)</span> is a homotopy contains <span class="math inline">\(f,g,h\)</span>, i. e. <span class="math inline">\(f\)</span> and <span class="math inline">\(h\)</span> are homotopic.</p>
+<ol type="a">
+<li></li>
+</ol>
+<p>Suppose <span class="math inline">\(f_1:X\to Y\)</span> and <span class="math inline">\(f_2:Y\to Z\)</span> are homotopy equivalence respectively, i. e. there exists <span class="math inline">\(g_1:Y\to X\)</span> s. t. <span class="math inline">\(f_1\circ g_1\simeq\mathrm{ide}_Y\)</span> and <span class="math inline">\(g_1\circ f_1\simeq\mathrm{ide}_X\)</span>, <span class="math inline">\(g_2:Z\to Y\)</span> s. t. <span class="math inline">\(f_2\circ g_2\simeq\mathrm{ide}_z\)</span> and <span class="math inline">\(g_2\circ f_2\simeq\mathrm{ide}_Y\)</span>.</p>
+<p>We are going to show that <span class="math inline">\(g_1\circ g_2\circ f_2\circ f_1\simeq\mathrm{ide}_X\)</span> and <span class="math inline">\(f_2\circ f_1\circ g_1\circ g_2\simeq\mathrm{ide}_Z\)</span>, which by definition deduce that <span class="math inline">\(X\)</span> is homotopy equivalent to <span class="math inline">\(Z\)</span>.</p>
+<p>Take <span class="math inline">\(g_1\circ g_2\circ f_2\circ f_1\)</span> as example. Since <span class="math inline">\(g_1\circ f_1\simeq\mathrm{ide}_X\)</span> and in (b) above we have proved that relation of homotopy among maps is an equivalence relation, we only need to prove <span class="math inline">\(g_1\circ g_2\circ f_2\circ f_1\simeq g_1\circ f_1\)</span>.</p>
+<p>Since <span class="math inline">\(g_2\circ f_2\simeq\mathrm{ide}_Y\)</span>, there exists homotopy <span class="math inline">\(F(y,t)\)</span> s. t. <span class="math inline">\(F(y_,0)=g_2\circ f_2,F(y,1)=\mathrm{ide}_Y\)</span>. Then we know that <span class="math inline">\(G(x,t)=g_1(x)\circ F(y,t)\circ f_1(x)\)</span> is a homotopy with <span class="math inline">\(G(x_,0)=g_1\circ g_2\circ f_2\circ f_1,G(x,1)=g_1\circ f_1\)</span>, i. e. <span class="math inline">\(g_1\circ g_2\circ f_2\circ f_1\simeq g_1\circ f_1\simeq\mathrm{ide}_X\)</span>.</p>
+<p><span class="math inline">\(f_2\circ f_1\circ g_1\circ g_2\simeq\mathrm{ide}_Z\)</span> is of the same reason.</p>
+<ol start="3" type="a">
+<li></li>
+</ol>
+<p>It is easy to show that if <span class="math inline">\(f\simeq g\)</span>, then <span class="math inline">\(h\circ f\simeq h\circ g\)</span> and <span class="math inline">\(f\circ h\simeq g\circ h\)</span>.</p>
+<h2 id="section-1">4.</h2>
+<p>Denote the inclusion <span class="math inline">\(A\to X\)</span> by <span class="math inline">\(i\)</span>. We are going to prove that <span class="math inline">\(i\circ f_1\simeq\mathrm{ide}_X\)</span> and <span class="math inline">\(f_1\circ i\simeq\mathrm{ide}_A\)</span>.</p>
+<p><span class="math inline">\(i\circ f_1\simeq\mathrm{ide}_X\)</span> is obvious since <span class="math inline">\(i\circ f_1=f_1\)</span> and <span class="math inline">\(f_1\simeq\mathrm{ide}_X\)</span> due to the weak deformation retraction.</p>
+<p>For <span class="math inline">\(f_1\circ i\simeq\mathrm{ide}_A\)</span>, notice that <span class="math inline">\(G(x,t)=f_t|_A\)</span> with is a homotopy with <span class="math inline">\(G(x,0)=\mathrm{ide}_A\)</span> and <span class="math inline">\(G(x,1)=f_1\circ i\)</span>.</p>
+<h2 id="section-2">11.</h2>
+<ol type="i">
+<li></li>
+</ol>
+<p>Notice that <span class="math inline">\(g\simeq(h\circ f)\circ g=h\circ (f\circ g)\simeq h\)</span>, thus <span class="math inline">\(g\circ f\simeq h\circ f\simeq\text{ide}_Y\)</span>。</p>
+<ol start="2" type="i">
+<li></li>
+</ol>
+<p>Since <span class="math inline">\(f\circ g\)</span> and <span class="math inline">\(h\circ f\)</span> is homotopy equivalence respectively, there exists <span class="math inline">\(a:Y\to Y\)</span> s. t. <span class="math inline">\(f\circ g\circ a\simeq\text{ide}_Y\)</span> and <span class="math inline">\(b: X\to X\)</span> s. t. <span class="math inline">\(\text{ide}_X\simeq b\circ h\circ f\)</span>. Thus from the conclusion in (i) we know that <span class="math inline">\(f\)</span> is a homotopy equivalence between <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span>.</p>
+<p>P. S. We remark that in the <span class="math inline">\(f:X\to X\)</span> situation, "<span class="math inline">\(f\simeq\text{ide}_X\)</span>" is stronger than "<span class="math inline">\(f\)</span> is a homotopy equivalence of <span class="math inline">\(X\)</span> itself".</p>
+<h2 id="section-3">17.</h2>
+<ol type="a">
+<li></li>
+</ol>
+<p><span class="math inline">\(0\)</span>-skeleton. Two cells: <span class="math inline">\(e^0_1\)</span> denotes an arbitrary point <span class="math inline">\(x_0\in S^1\times\{0\}\)</span> and <span class="math inline">\(e^0_2\)</span> denotes its image <span class="math inline">\(f(x_0)\in S^1\times\{1\}\)</span>.</p>
+<p><span class="math inline">\(1\)</span>-skeleton. Two cells: <span class="math inline">\(e^1_1\)</span> denotes $ S^1{0}$ with the map attaches its boundary <span class="math inline">\(\varphi^1_1|_{\part e^1_1}:\varphi(x)=e^0_1\)</span>, <span class="math inline">\(e^1_2\)</span> denotes $ S^1{1}$ with the map attaches its boundary <span class="math inline">\(\varphi^1_2|_{\part e^1_2}:\varphi(x)=e^0_2\)</span>.</p>
+<p><span class="math inline">\(2\)</span>-skeleton. One cell. <span class="math inline">\(e^2_1\)</span> denotes $ S^1(0,1)$ with the map attaches its boundary <span class="math inline">\(\varphi^2_1|_{\part e^2_1}\)</span>: suppose that <span class="math inline">\(\part e^2_1=a\sqcup b\sqcup c\sqcup d\)</span> in turn in which <span class="math inline">\(a,b,c,d\)</span> are all <span class="math inline">\(1\)</span>-cells, then <span class="math inline">\(\varphi^2_1|_{\part e^2_1}:\begin{cases}a(x)=c(x)\\b(x)=e^1_1(x)\\d(x)=e^1_2(f(x))\end{cases}\)</span> .</p>
+<ol start="2" type="a">
+<li></li>
+</ol>
+<p>Firstly, it is obvious that both Mobius band and annulus are CW complex. Notice that both of them can deformation retract to its central circle, thus we can attach both of them to a shared central circle and get the desired CW complex.</p>
 
       
     </div>
