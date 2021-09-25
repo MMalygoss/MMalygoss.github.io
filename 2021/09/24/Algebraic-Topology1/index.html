@@ -20,16 +20,18 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","version":"8.6.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
-<meta name="description" content="Chapter 0 3. We prove (b) first.    Suppose \(f,g,h:X\to Y\). Suppose \(f\) and \(g\) are in the homotopy \(F(x,t)\) with \(f(x)&#x3D;F(x,t_1), g(x)&#x3D;F(x,t_2)\), and \(g\) and \(h\) are in the homotop">
+<meta name="description" content="Chapter 0 1. It is not easy to construct a explicit deformation retraction directly on the torus. However, if we notice that a torus is homeomorphism to a square with each pair of opposite edges glu">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hatcher&#39;s Algebraic Topology Solutions">
 <meta property="og:url" content="http://example.com/2021/09/24/Algebraic-Topology1/index.html">
 <meta property="og:site_name" content="Malygos&#39; Blog">
-<meta property="og:description" content="Chapter 0 3. We prove (b) first.    Suppose \(f,g,h:X\to Y\). Suppose \(f\) and \(g\) are in the homotopy \(F(x,t)\) with \(f(x)&#x3D;F(x,t_1), g(x)&#x3D;F(x,t_2)\), and \(g\) and \(h\) are in the homotop">
+<meta property="og:description" content="Chapter 0 1. It is not easy to construct a explicit deformation retraction directly on the torus. However, if we notice that a torus is homeomorphism to a square with each pair of opposite edges glu">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://i.loli.net/2021/09/25/pPfcSztw69W4oFE.png">
 <meta property="article:published_time" content="2021-09-24T02:08:14.000Z">
-<meta property="article:modified_time" content="2021-09-24T04:46:49.442Z">
+<meta property="article:modified_time" content="2021-09-25T15:06:41.776Z">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/09/25/pPfcSztw69W4oFE.png">
 
 
 <link rel="canonical" href="http://example.com/2021/09/24/Algebraic-Topology1/">
@@ -118,7 +120,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#chapter-0"><span class="nav-number">1.</span> <span class="nav-text">Chapter 0</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#section"><span class="nav-number">1.1.</span> <span class="nav-text">3.</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#section-1"><span class="nav-number">1.2.</span> <span class="nav-text">4.</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#section-2"><span class="nav-number">1.3.</span> <span class="nav-text">11.</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#section-3"><span class="nav-number">1.4.</span> <span class="nav-text">17.</span></a></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#chapter-0"><span class="nav-number">1.</span> <span class="nav-text">Chapter 0</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#section"><span class="nav-number">1.1.</span> <span class="nav-text">1.</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#section-1"><span class="nav-number">1.2.</span> <span class="nav-text">2.</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#section-2"><span class="nav-number">1.3.</span> <span class="nav-text">3.</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#section-3"><span class="nav-number">1.4.</span> <span class="nav-text">4.</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#section-4"><span class="nav-number">1.5.</span> <span class="nav-text">5.</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#section-5"><span class="nav-number">1.6.</span> <span class="nav-text">6.</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#section-6"><span class="nav-number">1.7.</span> <span class="nav-text">11.</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#section-7"><span class="nav-number">1.8.</span> <span class="nav-text">17.</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -203,10 +205,16 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
-      
 
-      <time title="Created: 2021-09-24 10:08:14 / Modified: 12:46:49" itemprop="dateCreated datePublished" datetime="2021-09-24T10:08:14+08:00">2021-09-24</time>
+      <time title="Created: 2021-09-24 10:08:14" itemprop="dateCreated datePublished" datetime="2021-09-24T10:08:14+08:00">2021-09-24</time>
     </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-09-25 23:06:41" itemprop="dateModified" datetime="2021-09-25T23:06:41+08:00">2021-09-25</time>
+      </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-folder"></i>
@@ -228,7 +236,14 @@
     
     <div class="post-body" itemprop="articleBody">
         <h1 id="chapter-0">Chapter 0</h1>
-<h2 id="section">3.</h2>
+<h2 id="section">1.</h2>
+<p>It is not easy to construct a explicit deformation retraction directly on the torus. However, if we notice that a torus is homeomorphism to a square with each pair of opposite edges glued respectively, then the representation would be much easier.</p>
+<p><img src="https://i.loli.net/2021/09/25/pPfcSztw69W4oFE.png" alt="hatcher-0-1" style="zoom:50%;" /></p>
+<p>In that perspective, a torus with one point deleted is homeomorphism to the quotient space of a square with one point deleted, and the desired image space induces the very four edges of the square.</p>
+<p>The deformation retraction from a "glued square with one point deleted" to its edges is obvious to construct.</p>
+<h2 id="section-1">2.</h2>
+<p>The deformation retraction directly gives by <span class="math inline">\(F(x,t)=\frac{x}{t(||x||-1)+1}\)</span>.</p>
+<h2 id="section-2">3.</h2>
 <p>We prove (b) first.</p>
 <ol start="2" type="a">
 <li></li>
@@ -247,11 +262,28 @@
 <li></li>
 </ol>
 <p>It is easy to show that if <span class="math inline">\(f\simeq g\)</span>, then <span class="math inline">\(h\circ f\simeq h\circ g\)</span> and <span class="math inline">\(f\circ h\simeq g\circ h\)</span>.</p>
-<h2 id="section-1">4.</h2>
+<h2 id="section-3">4.</h2>
 <p>Denote the inclusion <span class="math inline">\(A\to X\)</span> by <span class="math inline">\(i\)</span>. We are going to prove that <span class="math inline">\(i\circ f_1\simeq\mathrm{ide}_X\)</span> and <span class="math inline">\(f_1\circ i\simeq\mathrm{ide}_A\)</span>.</p>
 <p><span class="math inline">\(i\circ f_1\simeq\mathrm{ide}_X\)</span> is obvious since <span class="math inline">\(i\circ f_1=f_1\)</span> and <span class="math inline">\(f_1\simeq\mathrm{ide}_X\)</span> due to the weak deformation retraction.</p>
-<p>For <span class="math inline">\(f_1\circ i\simeq\mathrm{ide}_A\)</span>, notice that <span class="math inline">\(G(x,t)=f_t|_A\)</span> with is a homotopy with <span class="math inline">\(G(x,0)=\mathrm{ide}_A\)</span> and <span class="math inline">\(G(x,1)=f_1\circ i\)</span>.</p>
-<h2 id="section-2">11.</h2>
+<p>For <span class="math inline">\(f_1\circ i\simeq\mathrm{ide}_A\)</span>, notice that <span class="math inline">\(G(x,t)=f_t|_A\)</span> which is a homotopy with <span class="math inline">\(G(x,0)=\mathrm{ide}_A\)</span> and <span class="math inline">\(G(x,1)=f_1\circ i\)</span>.</p>
+<h2 id="section-4">5.</h2>
+<p>As the deformation retraction gives us the homotopy <span class="math inline">\(F(x,t)=f_t(x)\)</span>, it is natural to consider <span class="math inline">\(F|_V\)</span> as the required homotopy connects the inclusion <span class="math inline">\(V\hookrightarrow U\)</span> and the constant map <span class="math inline">\(V\to x\)</span> . What we need to prove is that, for any given <span class="math inline">\(U\)</span>, there exists <span class="math inline">\(V\subset U\)</span> s. t. <span class="math inline">\(f_t(V)\subset U\)</span> for all <span class="math inline">\(t\in[0,1]\)</span>.</p>
+<p>Since <span class="math inline">\(f_t(x)=x\in U\)</span> for all <span class="math inline">\(t\)</span>, by continuity, for each <span class="math inline">\(t\)</span> in <span class="math inline">\(I=[0,1]\)</span> there is a neighborhood <span class="math inline">\(W(t)\)</span> of <span class="math inline">\(t\)</span> in <span class="math inline">\(I\)</span> and a neighborhood <span class="math inline">\(V(t)\)</span> of <span class="math inline">\(x\)</span> in <span class="math inline">\(X\)</span> such that <span class="math inline">\(F( V(t) \times W(t) )\)</span> is contained in <span class="math inline">\(U\)</span>. Since the <span class="math inline">\(W(t)\)</span> form a covering of <span class="math inline">\(I\)</span> and <span class="math inline">\(I\)</span> is compact, finitely many of the <span class="math inline">\(W(t)\)</span> form a covering of <span class="math inline">\(I\)</span> due to the Heine–Borel theorem. Let <span class="math inline">\(V\)</span> be the intersection of <span class="math inline">\(U\)</span> with all the corresponding finitely many <span class="math inline">\(V(t)\)</span>. Then <span class="math inline">\(V\)</span> is a neighborhood of <span class="math inline">\(x\)</span> contained in <span class="math inline">\(U\)</span> such that <span class="math inline">\(F(V \times I)\)</span> is contained in <span class="math inline">\(U\)</span>.</p>
+<h2 id="section-5">6.</h2>
+<ol type="a">
+<li></li>
+</ol>
+<p>Point on the bottom line case. Let all the straight line <span class="math inline">\(\{r\}\times[0,1-r]\)</span> deformation retracts to <span class="math inline">\((r,0)\)</span> first, and then make the bottom line deformation retracts to the point.</p>
+<p>Otherwise. We will use the conclusion in problem 5. to make contradiction. If the space deformation retracts to a point <span class="math inline">\((x,y)\)</span> with <span class="math inline">\(y\neq0\)</span>, then for any neighborhood <span class="math inline">\(U\ni (x,y)\)</span>, there exists a neighborhood <span class="math inline">\(V\subset U\)</span> s. t. the inclusion <span class="math inline">\(i:V\hookrightarrow U\)</span> is nullhomotopic. However, we know that any neighborhood <span class="math inline">\(V\)</span> of <span class="math inline">\((x,y)\)</span> is not connected, in particular, not path-connected.</p>
+<p>Remark that a space is impossible to be contractible if it is not path-connected. Suppose the space <span class="math inline">\(X\)</span> can contract to an point <span class="math inline">\(x_0\)</span>, then for each point <span class="math inline">\(x\)</span> there is a continuous map <span class="math inline">\(f_{x}(t)\)</span> from <span class="math inline">\(I=[0,1]\)</span> to <span class="math inline">\(X\)</span> s. t. <span class="math inline">\(f(0)=x\)</span> and <span class="math inline">\(f(1)=x_0\)</span>. Then for each pair of points <span class="math inline">\(x_1,x_2\)</span>, the composition of its <span class="math inline">\(f\)</span> induces a new continuous map from <span class="math inline">\(I\)</span> to <span class="math inline">\(X\)</span> s. t. <span class="math inline">\(f(0)=x_1\)</span> and <span class="math inline">\(f(1)=x_2\)</span>, which induce a path connects <span class="math inline">\(x_1\)</span> and <span class="math inline">\(x_2\)</span>.</p>
+<p>For the same reason, the inclusion <span class="math inline">\(i:V\hookrightarrow U\)</span> can not be nullhomotopic.</p>
+<ol start="2" type="a">
+<li>&amp; (c)</li>
+</ol>
+<p>We will directly give the method that deformation retracts <span class="math inline">\(Y\)</span> to <span class="math inline">\(Z\)</span> in the weak sense.</p>
+<p>The key thing is to slide the base as well! Simply move every point in <span class="math inline">\(Z\)</span> along the zigzag to the right at a constant speed of contracting the triangles. As points in the "bristles" reach the base, have them turn the corner and start sliding along the zigzag as well, and as points reach the end of one base have them turn the corner on the zigzag and continue to the right at the same speed.</p>
+<p>Remark that in the method above we contracting the triangles at a constant speed but not proportional as we did in (a). That is, the point in the short bristles will reach the base first and then slide along the zigzag, while the points in the long bristles are still contracting. When the point of each longest bristles <span class="math inline">\(\{0\}\times[0,1]\)</span> reaches <span class="math inline">\((0,0)\)</span>, the deformation retraction is over.</p>
+<h2 id="section-6">11.</h2>
 <ol type="i">
 <li></li>
 </ol>
@@ -261,7 +293,7 @@
 </ol>
 <p>Since <span class="math inline">\(f\circ g\)</span> and <span class="math inline">\(h\circ f\)</span> is homotopy equivalence respectively, there exists <span class="math inline">\(a:Y\to Y\)</span> s. t. <span class="math inline">\(f\circ g\circ a\simeq\text{ide}_Y\)</span> and <span class="math inline">\(b: X\to X\)</span> s. t. <span class="math inline">\(\text{ide}_X\simeq b\circ h\circ f\)</span>. Thus from the conclusion in (i) we know that <span class="math inline">\(f\)</span> is a homotopy equivalence between <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span>.</p>
 <p>P. S. We remark that in the <span class="math inline">\(f:X\to X\)</span> situation, "<span class="math inline">\(f\simeq\text{ide}_X\)</span>" is stronger than "<span class="math inline">\(f\)</span> is a homotopy equivalence of <span class="math inline">\(X\)</span> itself".</p>
-<h2 id="section-3">17.</h2>
+<h2 id="section-7">17.</h2>
 <ol type="a">
 <li></li>
 </ol>
@@ -271,7 +303,7 @@
 <ol start="2" type="a">
 <li></li>
 </ol>
-<p>Firstly, it is obvious that both Mobius band and annulus are CW complex. Notice that both of them can deformation retract to its central circle, thus we can attach both of them to a shared central circle and get the desired CW complex.</p>
+<p>Firstly, it is obvious that both Mobius band and annulus are CW complex. Notice that both of them can deformation retract to its central circle <span class="math inline">\(S^1\)</span>, thus we can attach both of them to a shared central circle and get the desired CW complex.</p>
 
     </div>
 
